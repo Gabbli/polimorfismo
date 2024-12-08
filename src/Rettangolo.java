@@ -1,4 +1,4 @@
-public class Rettangolo {
+public class Rettangolo extends Forma{
     double altezza;
     double larghezza;
 
@@ -8,7 +8,7 @@ public class Rettangolo {
         this.larghezza = larghezza;
     }
 
-
+    @Override
     public void calcolaArea() {
         double area = altezza * larghezza;
         System.out.println("L'area del Rettangolo è: "+ area);

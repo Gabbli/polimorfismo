@@ -1,6 +1,5 @@
 public class Triangolo extends Rettangolo{
 
-    double area = (altezza * larghezza)/2;
 
     public Triangolo(double altezza, double larghezza) {
         super(altezza, larghezza);
@@ -8,6 +7,7 @@ public class Triangolo extends Rettangolo{
 
     @Override
     public void calcolaArea() {
-        System.out.println("L'area del  Triangolo è: "+ area);
+        double area = (altezza * larghezza)/2;
+        System.out.println("L'area del Triangolo è: "+ area);
     }
 }
